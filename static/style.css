@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #FEFFFC;
+  }
+  
+.navigation-bar {
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    background-color: rgba(14, 3, 114, 0.527);
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: -25vh;
+  }
+  .navigation-bar>#logo{
+    justify-self: flex-start;
+    height: fit-content;
+    width: 100px;
+    height: 70px;
+  }
+  
+  .navigation-bar>nav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    list-style: none;
+    padding: 0;
+    color: #000000;
+  }
+  
+  .navigation-bar>nav>ul>li>a {
+    display: block;
+    padding: 1vh;
+    border: 0.5px solid black;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navigation-bar>nav>ul>li>a:hover {
+    background-color: #AEAB56;
+  }
+  
+  .navigation-bar>#menu {
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    padding: 1.5vh;
+    border: 0.5px solid black;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  /******* First Slide ********/
+  .first-slide{
+    position: relative;
+    padding-top: 30vh;
+    background-color: #F4F0E2;
+    display: flex;
+    flex-direction: column;
+  }
+  .text-area{
+    margin: 2vh;
+    position: absolute;
+    left: 0;
+    top: 32vh;
+    width: 60%;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #A11E21;
+    padding: 10px 20px;
+    color: #FEFFFC;
+  }
+  .image-area{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-left: auto;
+  }
+  .text-area h1{
+    font-size: 3vh;
+  }
+  .image-area img{
+    max-width: 100%;
+    display: block;
+  }
+  .text-under{
+    margin: 2vh;
+    margin-top: 15vh;
+
+  }
+  .text-under h2{
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+  .text-under p{
+    font-size: 2vh;
+  }
+
+  /************ Second Slide **********/
+  .second-slide{
+    background: url(images/about-section-2-bg.jpg);
+    padding: 40px;
+  }
+  .second-slide img{
+    max-width: 100%;
+    height: auto;
+  }
+
+   /************ Third Slide **********/
+   .third-slide{
+    padding-bottom: 4vh;
+    background-color: #f8f8ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .text-area-3{
+    margin: 2vh;
+   }
+   .third-slide h2{
+    
+    background-color: #A11E21;
+    color: #F4F0E2;
+    padding: 10px 15px;
+    margin-bottom: 3vh;
+    font-size: 2.5vh;
+    width: fit-content;
+
+    margin-top: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+   }
+   .text-area-3 p{
+    font-size: 2vh;
+   }
+   .third-slide img{
+    max-width: 80%;
+   }
+
+   /************ Fourth Slide **********/
+   .fourth-slide{
+    padding-bottom: 4vh;
+    background-color: #f8f8ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .text-area-4{
+    margin: 2vh;
+   }
+   .text-area-4 h2{
+    margin: 2vh;
+    background-color: #A11E21;
+    color: #F4F0E2;
+    padding: 10px 15px;
+    margin-bottom: 3vh;
+    font-size: 2.5vh;
+    width: fit-content;
+
+     margin-top: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+   }
+   .text-area-4 p{
+    font-size: 2vh;
+   }
+   .fourth-slide img{
+    max-width: 80%;
+   }
+
+   @media (min-width: 768px){
+
+    .navigation-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2vh 4vh;
+    }
+    
+      .navigation-bar>nav>ul {
+        flex-direction: row;
+        gap: 3vh;
+    }
+
+    .third-slide{
+        position: relative;
+        flex-direction:row-reverse;
+        gap: 5vh;
+        padding: 2vh;
+    }
+    .third-slide h2{
+        position: absolute;
+        z-index: 10;
+        top: 10%; 
+        left: 40%;
+    }
+    .text-area-3{
+        margin-top: 20vh;
+        text-align: start;
+        flex-basis: 50%;
+    }
+    .third-slide img{
+        max-width: 60%;
+    }
+
+    .fourth-slide{
+        flex-direction:row;
+        gap: 5vh;
+        padding: 2vh;
+    }
+    .text-area-4{
+    }
+    .text-area-4 h2{
+        margin: 0;
+        margin-bottom: 4vh;
+        justify-content: flex-start;
+    }
+    .fourth-slide img{
+        max-width: 60%;
+    }
+
+}
